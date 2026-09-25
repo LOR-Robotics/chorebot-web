@@ -36,7 +36,8 @@ No Node build is required. `_headers` is applied automatically by Pages.
 
 | Path | Role |
 |------|------|
-| `index.html` | Single-page landing |
+| `index.html` | Landing — product, software-first, Demo (#demo), where, contact |
+| `investors.html` | Soft investor overview stub · deck coming soon |
 | `styles.css` | Forest green + cream brand styles |
 | `script.js` | Mobile nav + year |
 | `assets/` | SVG mark, wordmark, favicon, hero illustration |
