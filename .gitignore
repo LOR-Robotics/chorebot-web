@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local tooling / Cloudflare
+.wrangler/
+.dev.vars
+.node-version
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
