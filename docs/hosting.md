@@ -4,14 +4,20 @@
 
 This site is a **brochure only** — HTML/CSS/JS, no server, no database, no auth.
 
-**Recommended host:** Cloudflare Pages
+**Live**
 
-- Connect the GitHub repo
+- https://chorebot-web.pages.dev
+- https://4a9717c3.chorebot-web.pages.dev (deployment alias)
+
+**Host:** Cloudflare Pages (Oliver Holt account) · GitHub repo `LOR-Robotics/chorebot-web`
+
+Build settings:
+
 - Framework preset: **None**
 - Build command: empty
 - Output directory: project root (`/` or `.`)
 
-Optional: attach a custom domain (e.g. `lor-robotics.com`) once DNS is ready. Until then, use the `*.pages.dev` URL.
+Optional: attach a custom domain (e.g. `lor-robotics.com`) once DNS is ready.
 
 Security headers live in `_headers` at the site root and are applied by Pages automatically.
 
