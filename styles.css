@@ -1,15 +1,20 @@
 /* LOR Robotics / ChoreBot — marketing brochure */
 :root {
-  --green-900: #0F3D2E;
-  --green-700: #1B6B4A;
-  --green-500: #2A8F62;
-  --green-100: #E8F5EF;
-  --green-50: #F4F7F5;
-  --ink: #14201A;
-  --ink-muted: #4A5C52;
-  --line: #C5D9CE;
-  --white: #FFFFFF;
-  --shadow: 0 12px 40px rgba(15, 61, 46, 0.08);
+  --forest-950: #102A20;
+  --forest-900: #174A35;
+  --forest-800: #1D5A40;
+  --forest-700: #286B4B;
+  --forest-600: #3F805D;
+  --forest-100: #E1E9D9;
+  --forest-50: #EDF1E6;
+  --cream: #F7F3E8;
+  --cream-deep: #EEE8D8;
+  --paper: #FCFAF3;
+  --ink: #1D3027;
+  --ink-muted: #4B5E51;
+  --line: #C8D3C2;
+  --white: #FFFDF7;
+  --shadow: 0 14px 34px rgba(16, 42, 32, 0.10);
   --radius: 16px;
   --max: 1080px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -39,7 +44,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   color: var(--ink);
-  background: var(--white);
+  background: var(--cream);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,18 +55,18 @@ img {
 }
 
 a {
-  color: var(--green-700);
+  color: var(--forest-800);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.18em;
 }
 
 a:hover {
-  color: var(--green-900);
+  color: var(--forest-950);
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--green-500);
+  outline: 3px solid var(--forest-600);
   outline-offset: 3px;
 }
 
@@ -69,8 +74,8 @@ button:focus-visible {
   position: absolute;
   left: 1rem;
   top: -3rem;
-  background: var(--green-900);
-  color: var(--white);
+  background: var(--forest-950);
+  color: var(--cream);
   padding: 0.5rem 0.85rem;
   border-radius: 8px;
   z-index: 100;
@@ -95,7 +100,7 @@ button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(247, 243, 232, 0.94);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -127,9 +132,9 @@ button:focus-visible {
 }
 
 .brand-name {
-  font-weight: 700;
+  font-weight: 750;
   letter-spacing: 0.01em;
-  color: var(--green-900);
+  color: var(--forest-950);
 }
 
 .brand-tag {
@@ -148,24 +153,24 @@ button:focus-visible {
 .site-nav a {
   text-decoration: none;
   color: var(--ink-muted);
-  font-weight: 500;
+  font-weight: 550;
   font-size: 0.95rem;
 }
 
 .site-nav a:hover {
-  color: var(--green-900);
+  color: var(--forest-950);
 }
 
 .nav-cta {
-  background: var(--green-900);
-  color: var(--white) !important;
+  background: var(--forest-950);
+  color: var(--cream) !important;
   padding: 0.45rem 0.9rem;
   border-radius: 999px;
 }
 
 .nav-cta:hover {
-  background: var(--green-700);
-  color: var(--white) !important;
+  background: var(--forest-800);
+  color: var(--cream) !important;
 }
 
 .nav-toggle {
@@ -182,7 +187,7 @@ button:focus-visible {
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--green-900);
+  background: var(--forest-950);
   border-radius: 1px;
 }
 
@@ -190,8 +195,8 @@ button:focus-visible {
 .hero {
   padding: 3.5rem 0 3rem;
   background:
-    radial-gradient(ellipse 80% 60% at 90% 10%, rgba(232, 245, 239, 0.9), transparent 55%),
-    linear-gradient(180deg, var(--green-50), var(--white));
+    radial-gradient(ellipse 80% 60% at 92% 8%, rgba(225, 233, 217, 0.9), transparent 58%),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
 }
 
 .hero-grid {
@@ -204,10 +209,10 @@ button:focus-visible {
 .eyebrow {
   margin: 0 0 0.75rem;
   font-size: 0.8rem;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--green-700);
+  color: var(--forest-700);
 }
 
 .hero h1 {
@@ -215,7 +220,7 @@ button:focus-visible {
   font-size: clamp(1.85rem, 4vw, 2.65rem);
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: var(--green-900);
+  color: var(--forest-950);
 }
 
 .lede {
@@ -237,31 +242,31 @@ button:focus-visible {
   justify-content: center;
   padding: 0.7rem 1.25rem;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 650;
   text-decoration: none;
   border: 2px solid transparent;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .btn-primary {
-  background: var(--green-900);
-  color: var(--white);
+  background: var(--forest-950);
+  color: var(--cream);
 }
 
 .btn-primary:hover {
-  background: var(--green-700);
-  color: var(--white);
+  background: var(--forest-800);
+  color: var(--cream);
 }
 
 .btn-ghost {
   background: transparent;
-  color: var(--green-900);
+  color: var(--forest-950);
   border-color: var(--line);
 }
 
 .btn-ghost:hover {
-  border-color: var(--green-700);
-  color: var(--green-700);
+  border-color: var(--forest-700);
+  color: var(--forest-800);
 }
 
 .hero-visual img {
@@ -273,10 +278,11 @@ button:focus-visible {
 /* Sections */
 .section {
   padding: 4rem 0;
+  background: var(--cream);
 }
 
 .section-alt {
-  background: var(--green-50);
+  background: var(--cream-deep);
   border-block: 1px solid var(--line);
 }
 
@@ -285,7 +291,7 @@ button:focus-visible {
   font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: 1.2;
   letter-spacing: -0.015em;
-  color: var(--green-900);
+  color: var(--forest-950);
 }
 
 .section-intro {
@@ -312,7 +318,7 @@ button:focus-visible {
 }
 
 .feature-grid li {
-  background: var(--white);
+  background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.35rem 1.4rem;
@@ -322,7 +328,7 @@ button:focus-visible {
 .feature-grid h3 {
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
-  color: var(--green-900);
+  color: var(--forest-900);
 }
 
 .feature-grid p {
@@ -343,7 +349,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--white);
+  background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 0.9rem 1.1rem;
@@ -354,10 +360,10 @@ button:focus-visible {
 .steps span {
   flex-shrink: 0;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 750;
   letter-spacing: 0.06em;
-  color: var(--green-700);
-  background: var(--green-100);
+  color: var(--forest-900);
+  background: var(--forest-100);
   padding: 0.35rem 0.55rem;
   border-radius: 8px;
 }
@@ -369,7 +375,7 @@ button:focus-visible {
 }
 
 .place-card {
-  background: var(--green-50);
+  background: var(--cream-deep);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.35rem 1.4rem;
@@ -378,7 +384,7 @@ button:focus-visible {
 .place-card h3 {
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
-  color: var(--green-900);
+  color: var(--forest-900);
 }
 
 .place-card p {
@@ -389,24 +395,24 @@ button:focus-visible {
 
 /* Contact */
 .section-contact {
-  background: var(--green-900);
-  color: var(--green-100);
+  background: var(--forest-900);
+  color: var(--forest-100);
 }
 
 .section-contact .eyebrow {
-  color: #8FCBB0;
+  color: #C5D8B7;
 }
 
 .section-contact h2 {
-  color: var(--white);
+  color: var(--cream);
 }
 
 .section-contact p {
-  color: #C5D9CE;
+  color: #D5E2CE;
 }
 
 .section-contact strong {
-  color: var(--white);
+  color: var(--cream);
 }
 
 .contact-mail {
@@ -417,27 +423,27 @@ button:focus-visible {
   display: inline-block;
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--cream);
   text-decoration: none;
-  border-bottom: 2px solid rgba(232, 245, 239, 0.45);
+  border-bottom: 2px solid rgba(247, 243, 232, 0.52);
 }
 
 .contact-mail a:hover {
-  border-bottom-color: var(--white);
-  color: var(--white);
+  border-bottom-color: var(--cream);
+  color: var(--cream);
 }
 
 .placeholder-note {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #8FCBB0;
+  color: #C5D8B7;
 }
 
 /* Footer */
 .site-footer {
-  background: #0A2A1F;
-  color: #A8C4B4;
+  background: var(--forest-950);
+  color: #D0DDC9;
   padding: 2rem 0;
   font-size: 0.9rem;
 }
@@ -463,13 +469,13 @@ button:focus-visible {
 .footer-note {
   margin-top: 0.35rem !important;
   max-width: 32rem;
-  color: #7A9A88;
+  color: #A7BDA6;
   font-size: 0.82rem;
 }
 
 .footer-meta {
   margin: 0;
-  color: #7A9A88;
+  color: #A7BDA6;
 }
 
 /* Responsive */
@@ -500,7 +506,7 @@ button:focus-visible {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: var(--white);
+    background: var(--cream);
     border-bottom: 1px solid var(--line);
     padding: 0.5rem 1rem 1rem;
   }

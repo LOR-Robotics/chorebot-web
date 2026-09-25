@@ -1,42 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Abstract outdoor wheeled chore robot">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#D8EDE4"/>
-      <stop offset="100%" stop-color="#F4F7F5"/>
+      <stop offset="0%" stop-color="#F7F3E8"/>
+      <stop offset="100%" stop-color="#EEE8D8"/>
     </linearGradient>
     <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1B6B4A"/>
-      <stop offset="100%" stop-color="#0F3D2E"/>
+      <stop offset="0%" stop-color="#286B4B"/>
+      <stop offset="100%" stop-color="#102A20"/>
     </linearGradient>
   </defs>
   <rect width="480" height="320" rx="24" fill="url(#sky)"/>
-  <!-- Ground -->
-  <path d="M0 250h480v70H0z" fill="#C5D9CE" opacity="0.55"/>
-  <path d="M40 250c40-18 80-18 120 0s80 18 120 0 80-18 120 0 80-18 80 0v20H40z" fill="#A8C4B4" opacity="0.4"/>
-  <!-- Soft hills -->
-  <ellipse cx="90" cy="248" rx="70" ry="14" fill="#9BB8A8" opacity="0.35"/>
-  <ellipse cx="380" cy="252" rx="90" ry="16" fill="#9BB8A8" opacity="0.3"/>
+  <!-- Ground and soft hills -->
+  <path d="M0 250h480v70H0z" fill="#C8D3C2" opacity=".62"/>
+  <path d="M40 250c40-18 80-18 120 0s80 18 120 0 80-18 120 0 80 18 80 0v20H40z" fill="#AFC0A6" opacity=".52"/>
+  <ellipse cx="90" cy="248" rx="70" ry="14" fill="#8EA987" opacity=".42"/>
+  <ellipse cx="380" cy="252" rx="90" ry="16" fill="#8EA987" opacity=".36"/>
+  <!-- Small botanical accents -->
+  <path d="M45 249c3-14 8-22 15-29M54 237c-8-5-13-5-18-3M57 229c7-6 12-7 18-5" fill="none" stroke="#5D7F58" stroke-width="2" stroke-linecap="round" opacity=".72"/>
+  <path d="M430 250c-2-13-7-21-13-28M423 239c7-5 12-5 17-3M421 231c-6-6-11-7-16-5" fill="none" stroke="#5D7F58" stroke-width="2" stroke-linecap="round" opacity=".72"/>
   <!-- Robot body (wheelbarrow-scale silhouette) -->
   <g transform="translate(110 95)">
     <!-- Bed / cargo -->
     <path d="M48 88h168c10 0 18-8 18-18V48c0-8-5-15-12-17L128 12c-4-1.2-8-1.2-12 0L42 31c-7 2-12 9-12 17v22c0 10 8 18 18 18z" fill="url(#body)"/>
     <!-- Side rail highlight -->
-    <path d="M50 52h150" stroke="#E8F5EF" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+    <path d="M50 52h150" stroke="#F7F3E8" stroke-width="2" opacity=".42" stroke-linecap="round"/>
     <!-- Sensor mast -->
-    <rect x="158" y="8" width="8" height="36" rx="2" fill="#0F3D2E"/>
-    <circle cx="162" cy="6" r="8" fill="#2A8F62"/>
-    <circle cx="162" cy="6" r="3.5" fill="#E8F5EF"/>
+    <rect x="158" y="8" width="8" height="36" rx="2" fill="#102A20"/>
+    <circle cx="162" cy="6" r="8" fill="#6B8F5A"/>
+    <circle cx="162" cy="6" r="3.5" fill="#F7F3E8"/>
     <!-- Attachment bay hint -->
-    <rect x="72" y="58" width="44" height="22" rx="4" fill="#E8F5EF" opacity="0.2"/>
-    <rect x="128" y="58" width="44" height="22" rx="4" fill="#E8F5EF" opacity="0.15"/>
+    <rect x="72" y="58" width="44" height="22" rx="4" fill="#F7F3E8" opacity=".22"/>
+    <rect x="128" y="58" width="44" height="22" rx="4" fill="#F7F3E8" opacity=".16"/>
     <!-- Wheels -->
-    <circle cx="88" cy="118" r="28" fill="#0F3D2E"/>
-    <circle cx="88" cy="118" r="18" fill="none" stroke="#E8F5EF" stroke-width="4" opacity="0.85"/>
-    <circle cx="88" cy="118" r="6" fill="#E8F5EF"/>
-    <circle cx="188" cy="118" r="28" fill="#0F3D2E"/>
-    <circle cx="188" cy="118" r="18" fill="none" stroke="#E8F5EF" stroke-width="4" opacity="0.85"/>
-    <circle cx="188" cy="118" r="6" fill="#E8F5EF"/>
+    <circle cx="88" cy="118" r="28" fill="#102A20"/>
+    <circle cx="88" cy="118" r="18" fill="none" stroke="#F7F3E8" stroke-width="4" opacity=".9"/>
+    <circle cx="88" cy="118" r="6" fill="#F7F3E8"/>
+    <circle cx="188" cy="118" r="28" fill="#102A20"/>
+    <circle cx="188" cy="118" r="18" fill="none" stroke="#F7F3E8" stroke-width="4" opacity=".9"/>
+    <circle cx="188" cy="118" r="6" fill="#F7F3E8"/>
     <!-- Soft shadow -->
-    <ellipse cx="138" cy="152" rx="100" ry="10" fill="#0F3D2E" opacity="0.12"/>
+    <ellipse cx="138" cy="152" rx="100" ry="10" fill="#102A20" opacity=".16"/>
   </g>
 </svg>
