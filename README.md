@@ -45,10 +45,12 @@ No Node build is required. `_headers` is applied automatically by Pages.
 
 ## Demo claim status
 
-Public `#demo` uses claim rung **R4** plain-English (soft G0 virtual evidence; stubs; no public Gazebo pitch clip; not DoD complete).
-Do not ship “Virtual demo coming soon” or “full virtual demo complete” copy.
-`DEMO_CLIP_URL` / `data-demo-clip-url` stays empty until an R5 GUI mp4 is published.
-Source of truth: `/workspace/chorebot/investor/g0-demo-claim-boundaries.md`.
+Public `#demo` uses claim rung **R4** plain-English (soft G0 virtual evidence; stubs; not DoD complete).
+Hero CTA is **“G0 demo status (R4)”** → status card, not “watch the demo.”
+An interim `assets/g0-investor-gui.mp4` exists in-repo (URL still 200 for internal use) but is **incomplete / blank-desktop** — **not** for diligence pitch CTA; Sim is shipping a watchable replacement. Do not autoplay or hero-embed the video.
+Do not ship “Virtual demo coming soon”, “pitch clip ready”, or “full virtual demo complete” copy.
+`data-demo-clip-url` stays empty until a watchable Sim replacement is approved for public CTA.
+Source of truth: `/workspace/chorebot/investor/g0-demo-claim-boundaries.md` (Tech claim ladder).
 
 ## Brand notes
 
