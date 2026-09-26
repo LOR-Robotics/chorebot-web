@@ -117,17 +117,19 @@
         <h2>G0 demo status (R4)</h2>
         <p class="section-intro">
           Soft G0 virtual demo evidence (claim rung <strong>R4</strong>).
-          Real navigation in sim for approach → bin → home.
+          Real NavigateToPose in sim for approach → bin → home (all SUCCEEDED).
           Scoop and dump are software stubs.
-          Soft e-stop path present.
-          No public Gazebo pitch clip yet.
-          Not a completed virtual demo DoD.
+          Soft e-stop path present; N3 mid-nav estop segment optional / not required for this clip.
+          Recorded on Parallels with headless Gazebo + RViz (GUI SoftGL create still stuck).
+          Not a completed virtual demo DoD — not AT-001-F / not G0-001 green.
         </p>
-        <!-- DEMO_CLIP_URL: keep empty until R5 GUI mp4 is published; do not claim pitch clip ready -->
-        <div class="demo-placeholder" id="demo-clip-slot" data-demo-clip-url="">
+        <div class="demo-clip" id="demo-clip-slot" data-demo-clip-url="assets/g0-investor-gui.mp4">
           <p class="demo-placeholder-title">G0 virtual · R4 interim</p>
-          <p>Clip not published. Natural-language chore → skill → sim nav evidence exists internally with an honest stub caption. Target artefact is an R5 Gazebo GUI mp4 — not ready for this page.</p>
-          <a class="btn btn-primary" href="#contact">Ask about a walkthrough</a>
+          <video controls playsinline preload="metadata" poster="" width="960">
+            <source src="assets/g0-investor-gui.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="demo-caption">Honest R4 caption: real nav goals SUCCEEDED; scoop/dump stubs; not DoD.</p>
         </div>
       </div>
     </section>
