@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="A friendly wheeled bin robot rolling along a park path towards a person who waves it over">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F3E8"/>
+      <stop offset="100%" stop-color="#EEE8D8"/>
+    </linearGradient>
+    <linearGradient id="binBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3F805D"/>
+      <stop offset="100%" stop-color="#174A35"/>
+    </linearGradient>
+    <linearGradient id="binLid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#286B4B"/>
+      <stop offset="100%" stop-color="#1D5A40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="24" fill="url(#sky)"/>
+  <circle cx="404" cy="64" r="26" fill="#E1E9D9"/>
+
+  <!-- Hills, grass and path -->
+  <path d="M0 212c60-26 120-30 180-14s120 22 180 4 90-18 120-10v128H0z" fill="#C8D3C2" opacity=".55"/>
+  <path d="M0 236c80-12 160-12 240-4s160 10 240-2v90H0z" fill="#AFC0A6" opacity=".7"/>
+  <path d="M-10 300c70-30 150-44 250-46s170-10 250-30" fill="none" stroke="#F7F3E8" stroke-width="34" stroke-linecap="round" opacity=".9"/>
+
+  <!-- Tree -->
+  <rect x="62" y="150" width="8" height="70" rx="3" fill="#4B5E51"/>
+  <circle cx="66" cy="140" r="30" fill="#5D7F58"/>
+  <circle cx="46" cy="158" r="19" fill="#6B8F5A"/>
+  <circle cx="88" cy="160" r="18" fill="#6B8F5A"/>
+
+  <!-- Person waving the bin over -->
+  <g fill="#4B5E51">
+    <circle cx="150" cy="190" r="9"/>
+    <rect x="140" y="201" width="20" height="36" rx="8"/>
+    <rect x="141" y="232" width="7" height="26" rx="3"/>
+    <rect x="152" y="232" width="7" height="26" rx="3"/>
+  </g>
+  <path d="M142 206l-8 24" stroke="#4B5E51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M158 206l12-22" stroke="#4B5E51" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="171" cy="181" r="4.5" fill="#4B5E51"/>
+  <path d="M180 172c4 3 5 8 3 12M186 167c6 5 8 12 5 19" fill="none" stroke="#3F805D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Route the robot is taking -->
+  <path d="M258 262c-24 2-48 0-72-2" fill="none" stroke="#286B4B" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/>
+
+  <!-- Bin robot -->
+  <ellipse cx="308" cy="266" rx="62" ry="9" fill="#102A20" opacity=".16"/>
+  <path d="M268 128h80l-6 108h-68z" fill="url(#binBody)"/>
+  <path d="M274 196h68" stroke="#F7F3E8" stroke-width="2" opacity=".3" stroke-linecap="round"/>
+  <rect x="260" y="114" width="96" height="16" rx="6" fill="url(#binLid)"/>
+  <rect x="356" y="118" width="10" height="6" rx="3" fill="#102A20"/>
+  <!-- Status light -->
+  <circle cx="308" cy="108" r="9" fill="#E1E9D9" opacity=".8"/>
+  <circle cx="308" cy="108" r="4.5" fill="#6B8F5A"/>
+  <!-- Face: sensor visor with two eyes -->
+  <rect x="282" y="142" width="52" height="22" rx="11" fill="#102A20"/>
+  <circle cx="298" cy="153" r="4" fill="#E1E9D9"/>
+  <circle cx="318" cy="153" r="4" fill="#E1E9D9"/>
+  <!-- Drive base and wheels -->
+  <rect x="266" y="234" width="84" height="18" rx="8" fill="#102A20"/>
+  <circle cx="280" cy="254" r="11" fill="#1D3027"/>
+  <circle cx="280" cy="254" r="4" fill="#C8D3C2"/>
+  <circle cx="336" cy="254" r="11" fill="#1D3027"/>
+  <circle cx="336" cy="254" r="4" fill="#C8D3C2"/>
+
+  <!-- Motion lines -->
+  <path d="M372 170h26M378 188h30M372 206h22" stroke="#8EA987" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</svg>

@@ -1,4 +1,4 @@
-# Hosting notes — ChoreBot brochure
+# Hosting notes — LOR Robotics brochure
 
 ## Now: Cloudflare Pages (static)
 

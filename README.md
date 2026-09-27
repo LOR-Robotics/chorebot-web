@@ -1,61 +1,41 @@
-# LOR Robotics · ChoreBot — marketing site
+# LOR Robotics — marketing site
 
-Static brochure site for **LOR Robotics** (working brand) and product **ChoreBot**.
-No framework, no build step. Hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
+Static brochure site for **LOR Robotics** (working name). No framework, no build step.
+Hosted on [Cloudflare Pages](https://pages.cloudflare.com/), deployed from `main`.
 
 ## Live
 
-- **Primary:** https://chorebot-web.pages.dev
-- Preview alias: https://4a9717c3.chorebot-web.pages.dev
-- Repo: https://github.com/LOR-Robotics/chorebot-web
+- https://chorebot-web.pages.dev (custom domain later, once the name and domain are settled)
 
-Custom domain later (e.g. `lor-robotics.com`) once DNS is ready.
+## What the site says
 
-## Local preview
+- One shared core (drive and power, navigation, safety, skills, fleet app) under many single-job robots.
+- First robot: a mobile smart bin for parks, campuses, estates and events.
+- Status: simulation today; first physical prototype this autumn in Gulbene, Latvia.
+- Call to action: register pilot interest.
 
-Open `index.html` in a browser, or serve the folder:
-
-```bash
-npx --yes serve .
-# or: python3 -m http.server 8080
-```
-
-## Deploy on Cloudflare Pages
-
-Already connected to this repo under Oliver Holt’s Cloudflare account.
-
-Build settings (for rebuilds / new projects):
-
-- **Framework preset:** None
-- **Build command:** *(leave empty)*
-- **Build output directory:** `/` (project root — the folder that contains `index.html`)
-
-No Node build is required. `_headers` is applied automatically by Pages.
+Keep public copy plain. No internal gate codes, test IDs or claim-ladder language, and no
+unreleased video. The product has no public name yet, so the site uses **LOR Robotics** only.
+Direction and wording rules live in `chorebot-docs/PLAN.md`.
 
 ## Contents
 
 | Path | Role |
 |------|------|
-| `index.html` | Landing — product, software-first, Demo (#demo = G0 status R4), where, contact |
-| `investors.html` | Soft investor overview stub · deck coming soon · R4 demo honesty pointer |
-| `styles.css` | Forest green + cream brand styles |
-| `script.js` | Mobile nav + year |
-| `assets/` | SVG mark, wordmark, favicon, hero illustration |
-| `docs/hosting.md` | Hosting notes (Pages now; optional API later) |
+| `index.html` | Landing: first robot, platform, pilots, contact |
+| `investors.html` | Short investor overview |
+| `styles.css` | Forest green and cream styles |
+| `script.js` | Mobile nav and footer year |
+| `assets/` | Logo mark, wordmark, favicon, `hero-bin.svg` illustration |
+| `docs/hosting.md` | Hosting notes |
 
-## Demo claim status
+## Local preview
 
-Public `#demo` uses claim rung **R4** plain-English (soft G0 virtual evidence; stubs; not DoD complete).
-Hero CTA is **“G0 demo status (R4)”** → status card, not “watch the demo.”
-An interim `assets/g0-investor-gui.mp4` exists in-repo (URL still 200 for internal use) but is **incomplete / blank-desktop** — **not** for diligence pitch CTA; Sim is shipping a watchable replacement. Do not autoplay or hero-embed the video.
-Do not ship “Virtual demo coming soon”, “pitch clip ready”, or “full virtual demo complete” copy.
-`data-demo-clip-url` stays empty until a watchable Sim replacement is approved for public CTA.
-Source of truth: `/workspace/chorebot/investor/g0-demo-claim-boundaries.md` (Tech claim ladder).
+```bash
+python3 -m http.server 8080
+```
 
-## Brand notes
+## Open item
 
-- Company: LOR Robotics (working brand)
-- Product: ChoreBot
-- Palette: forest green + cream
-- Contact placeholder: `hello@lor-robotics.com` (domain unconfirmed)
-- Not affiliated with Chore Robotics (US) or other “Chore” brands
+`hello@lor-robotics.com` does not work yet: the domain is not registered. Register it (or
+pick another address) and update both pages.
